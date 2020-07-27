@@ -1,0 +1,3 @@
+﻿  Vector.cpp
+C:\Users\Ethan\source\repos\LinearAlgebra\LinearAlgebra\Vector.cpp(19,28): warning C4018: '<': signed/unsigned mismatch
+  LinearAlgebra.vcxproj -> C:\Users\Ethan\source\repos\LinearAlgebra\Debug\LinearAlgebra.exe
