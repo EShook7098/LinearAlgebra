@@ -164,15 +164,18 @@ int main() {
 	//Magnitude (v^T v)^0.5
 	std::cout << "\n\nNormalizing the vectors to unit vectors.\n";
 
-	Vector normVector1 = Vector::norm(firstVector);
-	Vector normVector2 = Vector::norm(secondVector);
+	//Vector normVector1 = Vector::norm(firstVector);
+	//Vector normVector2 = Vector::norm(secondVector);
+	firstVector.norm().printVector();
+	secondVector.norm();
 	
-	std::cout << "\nThe magnitude of Vector 1 is: " << normVector1.getMagnitude() << "\nThe magnitude of Vector 2 is: " << normVector2.getMagnitude();
-	float normProduct = Vector::dotProduct(normVector1, normVector2);
+	std::cout << "\nThe magnitude of Vector 1 is: " << /*normVector1.getMagnitude()*/firstVector.getMagnitude() << "\nThe magnitude of Vector 2 is: " << /*normVector2.getMagnitude()*/secondVector.getMagnitude();
+	float normProduct = Vector::dotProduct(/*normVector1, normVector2*/ firstVector, secondVector);
 	std::cout << "\nThe dot product of the normalized vectors is: " << normProduct << "\n\n";
 
-	normVector1.printVector();
-	normVector2.printVector();
+	std::cout << "The cross product between the two vectors is: ";
+	Vector::crossProduct(firstVector, secondVector).printVector();
+
 	return 0;
 }
 
